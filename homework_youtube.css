@@ -1,0 +1,506 @@
+body {
+	background-color: black;
+	margin: 0;
+	color: white;
+}
+
+#top {
+	box-sizing: border-box;
+
+	width: 100%;
+	height: 56px;
+	position: fixed;
+	background-color: black;
+	margin: 0;
+	padding: 0 16px;
+	font-size: 0;
+}
+
+#top #topLeft {
+	width: 169px;
+	height: 56px;
+	font-size: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#top #topLeft:hover {
+	cursor: pointer;
+}
+
+#top #topLeft #change {
+	width: 40px;
+	height: 40px;
+	padding: 8px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#top #topLeft #change img {
+	width: 24px;
+	height: 24px;
+	filter: invert(100%);
+}
+
+#top #topLeft #youtubeLogo {
+	width: 120px;
+	height: 56px;
+	padding: 18px 14px 18px 16px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#top #topLeft #youtubeLogo #logo1 {
+	height: 20px;
+	margin-right: 3px;
+}
+
+#top #topLeft #youtubeLogo #logo2 {
+	height: 20px;
+	filter: invert(100%);
+}
+
+#top #topLeft #TW {
+	height: 44px;
+	font-size: 10px;
+	color: #aaaaaa;
+	font-family: 'Roboto', Arial, sans-serif;
+	margin: 12px 0 0 -10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#top #topMiddle {
+	width: 732px;
+	height: 40px;
+	display: inline-block;
+	/* background-color: blueviolet; */
+	position: relative;
+	top: 8px;
+	/* left: calc(50% - (732px / 2)); */
+	margin: 0 9%;
+}
+
+#top #topMiddle #search {
+	width: 640px;
+	height: 40px;
+	display: inline-block;
+	/* margin-left: 40px; */
+	padding: 0 4px;
+	line-height: 56px;
+	/* background-color: antiquewhite; */
+}
+
+#top #topMiddle #search #inputText {
+	width: 536px;
+	height: 40px;
+	/* margin-left: 32px; */
+	padding: 0 4px 0 16px;
+	box-sizing: border-box;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border: 1px solid #444444;
+	/* background-color: aqua; */
+	line-height: 48px;
+	display: inline-block;
+}
+
+#top #topMiddle #search #inputText input {
+	width: 515px;
+	height: 26px;
+	padding: 1px 0;
+	background-color: black;
+	color: #888888;
+	border: none;
+	box-sizing: border-box;
+	font-size: 16px;
+	outline: none;
+
+}
+
+#top #topMiddle #search #button {
+	width: 64px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 3px;
+	line-height: 50px;
+}
+
+#top #topMiddle #search #button button {
+	background: #3c3c3c;
+	width: 64px;
+	height: 40px;
+	box-sizing: border-box;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border: 1px solid #444;
+}
+
+
+#top #topMiddle #search #button img {
+	filter: invert(100%);
+	width: 30px;
+	height: 30px;
+}
+
+
+#top #topMiddle #speaker {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #3c3c3c;
+	text-align: center;
+}
+
+#top #topMiddle #speaker img {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 8px;
+	filter: invert(100%);
+}
+
+
+#top #topRight {
+	width: 225px;
+	height: 40px;
+	float: right;
+	position: relative;
+	top: 8px;
+	text-align: right;
+	vertical-align: top;
+}
+
+#top #topRight #more {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	padding: 8px;
+	margin-right: 8px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#top #topRight #more img {
+	filter: invert(100%);
+	font-size: 0;
+	width: 24px;
+	height: 24px;
+}
+
+#top #topRight #login1 {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+
+
+.logingButton {
+	color: #FFF;
+	box-sizing: border-box;
+	width: 83.6px;
+	height: 36px;
+	border: 0.8px solid #444;
+	border-radius: 18px;
+	/* margin-top: 12px; */
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+	text-align: left;
+}
+
+.logingButton:hover {
+	background-color: #444;
+	border: 0.8px solid rgba(0, 0, 0, 0);
+}
+
+.logingButton img {
+	width: 28px;
+	height: 26px;
+	position: relative;
+	margin: 4px 4px 0 7px;
+	transform: translateY(-40px);
+	filter: drop-shadow(rgb(6, 95, 212) 0 40px);
+}
+
+.logingButton div {
+	display: inline-block;
+	font-size: 14px;
+	height: 34.4px;
+	line-height: 34.4px;
+	vertical-align: top;
+	color: rgb(6, 95, 212);
+}
+
+#left {
+	width: 240px;
+	height: calc(100vh - 56px);
+	position: fixed;
+	top: 56px;
+	margin: 0;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+
+#left ul {
+	padding: 12px;
+	margin: 0;
+}
+
+#left li {
+	list-style: none;
+	width: 204px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px 0 12px;
+	font-size: 14px;
+	font-family: 'Roboto', 'Arial', 'sans-serif';
+	box-sizing: border-box;
+}
+
+#left li img {
+	width: 24px;
+	height: 24px;
+	margin-right: 20px;
+	top: 8px;
+	position: relative;
+	filter: invert(100%);
+}
+
+#left li:hover {
+	background-color: #3c3c3c;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+#left #left01 {
+	height: 145px;
+	border-bottom: 1px solid #5b5b5b;
+	box-sizing: border-box;
+}
+
+#left #left02 {
+	height: 105px;
+	border-bottom: 1px solid #5b5b5b;
+	box-sizing: border-box;
+}
+
+#left #left03 {
+	height: 121px;
+	box-sizing: border-box;
+	padding: 16px 16px 16px 32px;
+	border-bottom: 1px solid #5b5b5b;
+}
+
+#left #left03 p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Roboto', 'Arial', 'sans-serif';
+}
+
+#left #left03 .margin-top12 {
+	margin: 12px 0 0 0;
+	font-size: 0;
+}
+
+#left #left04 {
+	height: 377px;
+	padding: 12px;
+	border-bottom: 1px solid #5b5b5b;
+	box-sizing: border-box;
+}
+
+#left #left04 ul {
+	padding: 0;
+}
+
+#left #left04 p {
+	margin: 0;
+	padding: 6px 12px 4px 12px;
+}
+
+#left #left05 {
+	height: 65px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #5b5b5b;
+}
+
+#left #left06 {
+	height: 177px;
+	padding: 12px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #5b5b5b;
+}
+
+#left #left06 p {
+	margin: 0;
+	padding: 6px 12px 4px 12px;
+}
+
+#left #left06 ul {
+	padding: 0;
+}
+
+#left #left07 {
+	height: 184px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #5b5b5b;
+}
+
+#left #left08-1 {
+	height: 53px;
+	box-sizing: border-box;
+	padding: 16px 15px 0px 24px;
+	color: #adadad;
+}
+
+#left #left08-1 span {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 13px;
+	margin-right: 4px;
+}
+
+#left #left08-1 span:hover {
+	cursor: pointer;
+}
+
+#left #left08-2 {
+	height: 48px;
+	box-sizing: border-box;
+	padding: 16px 15px 0px 24px;
+	color: #adadad;
+}
+
+#left #left08-2 span {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 13px;
+	margin-right: 4px;
+}
+
+#left #left08-2 span:hover {
+	cursor: pointer;
+}
+
+#mid {
+	width: calc(100% - 240px);
+	height: 56px;
+	position: fixed;
+	top: 56px;
+	left: 240px;
+	margin: 0;
+	padding: 0 24px;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+#mid #button {
+	margin: 0;
+	line-height: 56px;
+}
+
+#mid #button div {
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	border-radius: 8px;
+	background-color: #3c3c3c;
+	margin: 12px 12px 12px 0;
+	padding: 0 12px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Roboto', 'Arial', 'sans-serif';
+}
+
+#mid #button div:hover {
+	background-color: #4f4f4f;
+	cursor: pointer;
+}
+
+#mid #button #button01 {
+	background-color: white;
+	color: black;
+}
+
+#bottom {
+	width: calc(100% - 240px);
+	position: absolute;
+	top: 112px;
+	left: 240px;
+	padding: 24px 16px 0 16px;
+	z-index: -1;
+	box-sizing: border-box;
+}
+
+#bottom a {
+	color: white;
+	text-decoration: none;
+}
+
+#bottom .video {
+	width: 325px;
+	height: 323px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#bottom .video img {
+	width: 325px;
+	height: 183px;
+	border-radius: 10px;
+}
+
+#bottom .video .video-info .avatar {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	top: 0;
+	margin: 12px 12px 0 0;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+#bottom .video .video-info .avatar a img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#bottom .video .video-info .video-description {
+	width: 273px;
+	height: 100px;
+	display: inline-block;
+	padding: 0 24px 0 0;
+	box-sizing: border-box;
+}
+
+#bottom .video .video-info .video-description .video-title {
+	height: 44px;
+	line-height: 22px;
+	margin: 12px 0 4px 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	white-space: normal;
+	overflow: hidden;
+}
+
+#bottom .video .video-info .video-description .youtuber a {
+	font-size: 14px;
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+#bottom .video .video-info .video-description span {
+	font-size: 14px;
+	color: #9d9d9d;
+	text-decoration: none;
+}
